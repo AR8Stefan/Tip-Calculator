@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- MY CSS -->
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+    <title>Tip Calculator</title>
+  </head>
+
+  <body>
+
+  	<!-- Start Calculator -->
+  	<div id="container">
+  		<h1>Tip Calculator</h1>
+  		<div id="calculator">
+	  		<form>
+				  <div class="form-group">
+				    <p >How much was the bill?</p>
+				    <p>$<input type="text" id="bill_amount" placeholder="Amount">
+				  </div></p>
+
+				  <div class="form-group">
+				    <p for="">Tip Amount:</p>
+				    <select id="service_quality">
+				    	<option disabled selected value="0">-- Choose an Option --</option>
+				      <option value="0.25">25% - Great Service</option>
+				      <option value="0.2">20% - Good Service</option>
+				      <option value="0.15">15% - Okay Service</option>
+				      <option value="0.1">10% - Not so bad</option>
+				      <option value="0.05">5% - Bad!</option>
+				    </select>
+				  </div>
+
+				  <div class="form-group">
+				    <p >How many people are sharing the bill?</p>
+				    <input type="text" id="people_amount" placeholder="Amount">
+				  </div>
+				  <button type="button" id="calculate">Calculate Tip</button>
+				  <!-- / Calculator -->
+
+				    <div id="total_tip">
+					    <sup>$</sup><span id="tip">0.00</span>
+					    <small id="each">each</small>
+					  </div>
+				  <!-- / Tip Calculation -->
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- My JS -->
+		<script type="text/javascript" src="./js/tipcalculator.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
